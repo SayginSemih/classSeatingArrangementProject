@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Ekleme Ekranı</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/students.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2 class="mb-4"><center>Öğrenci Ekleme Ekranı</center></h2>
+
+        <form>
+            <div class="form-group">
+                <label for="fname">Ad:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Soyad:</label>
+                <input type="text" class="form-control" id="surname" name="surname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Cinsiyet:</label>
+                <select class="form-control" id="gender" name="gender" required>
+                    <option value="Erkek">Erkek</option>
+                    <option value="Kız">Kız</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-success" onclick="addStudent()">Öğrenci Ekle</button>
+            <button type="button" class="btn btn-danger" onclick="exitStudent()">Çık</button>
+        </form>
+        <hr>
+        <h2 class="mb-4"><center>Öğrenci Listesi</center></h2>
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Adı</th>
+                <th scope="col">Soyadı</th>
+                <th scope="col">Cinsiyeti</th>
+                <th scope="col">Sil</th>
+              </tr>
+            </thead>
+            <tbody class="student-list">
+            </tbody>
+        </table>
+        
+    </div>
+    <script src="JS/students.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@500&display=swap');
+html, body {
+    height: 100%;
+  }
+  
+body{
+    margin:0;
+    padding:0;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.disable-container{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(213, 208, 208);
+}
+
+.class-wrap{
+    max-width: 800px;
+    max-height: 600px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5%;
+    position: relative;
+    z-index: 9999;
+    overflow: auto;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.class-wrap::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+}
+
+.class-wrap::-webkit-scrollbar-thumb {
+    background-color: rgb(116, 117, 116);
+    border-radius: 25px;
+}
+
+.class-wrap::-webkit-scrollbar-thumb:hover {
+    background-color: #39484f;
+}
+
+.title{
+    font-size: 40px;
+    color: rgb(23, 22, 22);
+    font-family: 'Lato', sans-serif;
+    text-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.selectClass{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.selectClass th{
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+}
+
+.selectClass th:hover{
+    background-color: rgb(220, 215, 215);
+    cursor: pointer;
+}
+
+.selectClass th i{
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.selectClass th i:hover{
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+}
+
+.add-class{
+    z-index: 9998;
+}
+

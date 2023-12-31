@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/class.css">
+    <title>Sınıf</title>
+</head>
+<body>
+    <div class="disabled"></div>
+    <div class="students-select-wrapper">
+        <div class="students-select">
+            <div class="students-wrapper">
+                <div class="students-select-title">ÖĞRENCİLER</div>
+                <div class="students-list">
+                    <ul class="student-ul"></ul>
+                </div>
+            </div>
+            <i id="exit" class="bi bi-x-circle"></i>
+        </div>
+    </div>
+    <div class="header-wrapper">
+        <div class="header">
+            <div class="left">
+                <div class="title">Sınıf: </div>
+                <div class="teacher">Öğretmen: </div>
+            </div>
+            <div class="buttons">
+                <button type="button" id="btnStudents" class="btn btn-dark btn-sm">Öğrenciler</button>
+                <button type="button" id="btnPrint" class="btn btn-dark btn-sm">Yazdır</button>
+            </div>
+            <div class="delete">
+                <button type="button" class="btn btn-danger" id="btnExit">Çık</button>
+            </div>
+        </div>
+    </div>
+    <div class="class-wrapper">
+        <div class="class-object">
+            <div class="board-wrapper">
+                <div class="board"></div>
+            </div>
+            <div class="main">
+                <div class="student-table-wrapper"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="JS/class.js"></script>
+</body>
+</html>

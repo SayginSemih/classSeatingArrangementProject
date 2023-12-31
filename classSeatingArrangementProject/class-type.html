@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/class-type.css" />
+    <title>Class Settings</title>
+</head>
+
+<body>
+    <div class="title-wrapper">
+        <div class="title">SINIF AYARLARI</div>
+    </div>
+    <div class="settings-wrapper">
+        <div class="settings-input">
+            <div class="form-group row">
+                <div class="col-sm-25">
+                    Öğrenci Sayısı:<input type="number" class="form-control studentCount" min="0" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-25">
+                    Yan Yana Sıra Sayısı: <input type="number" class="form-control tableCount" min="0" max="6" />
+                    (MAX 6)
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-25">
+                    Öğretmen Adı:<input type="text" class="form-control teacherName" min="0" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-wrapper">
+        <button type="button" class="btn btn-dark" id="btnCreate">Oluştur</button>
+    </div>
+    <div class="class-preview-wrapper">
+        <div class="class-preview"></div>
+    </div>
+    <script src="JS/class-type.js"></script>
+</body>
+
+</html>
